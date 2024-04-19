@@ -7,10 +7,9 @@ preload_models()
 
 # generate audio from text
 text_prompt = """
-     Hello, my name is Suno. And, uh — and I like pizza. [laughs] 
-     But I also have other interests such as playing tic tac toe.
+     Testing
 """
-audio_array = generate_audio(text_prompt)
+audio_array = generate_audio(text_prompt, history_prompt="en_speaker_3")
 
 # save audio to disk
 write_wav("bark_generation.wav", SAMPLE_RATE, audio_array)

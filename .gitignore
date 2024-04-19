@@ -11,3 +11,4 @@ devin-youtube/
 train_rvc.ipynb
 *.pt
 cache
+voices

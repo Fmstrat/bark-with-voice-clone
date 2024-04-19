@@ -43,6 +43,9 @@ RUN pip3 install torch torchvision torchaudio --index-url https://download.pytor
 RUN pip3 install ipython
 RUN pip3 install nbconvert
 RUN pip3 install git+https://github.com/suno-ai/bark.git
+RUN pip3 install git+https://github.com/liyaodev/fairseq
+RUN pip3 install audiolm-pytorch
+RUN pip3 install tensorboardX
 
 ADD --chown=user:user . /app
 WORKDIR /app
